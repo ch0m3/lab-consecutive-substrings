@@ -1,2 +1,27 @@
 Please add your pseudocode to this file
 And a written explanation of your solution
+
+
+FUNCTION consecutiveSubstrings(INPUT string)
+    CREATE empty array called result
+
+    FOR each index i from 0 to length of string - 1
+        SET current substring to empty string
+
+        FOR each index j from i to length of string - 1
+            ADD character at position j of string to current substring
+            ADD current substring to result array
+        END FOR
+    END FOR
+
+    RETURN result
+END FUNCTION
+
+
+
+
+The outer loop picks a starting position
+
+The inner loop builds substrings character by character
+
+Each consecutive substring is pushed into the result array
